@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="style.css">
+<script src="elementControls.js"></script>
+<script src="crowdControl.js"></script>
+<h1>Valorant Crowd Control</h1>
+<p>v. 1.0.0</p>
+<p>(c) JakeZSR Industries</p>
+<br>
+<input type="text" oninput="twitchUserNameChange();"class="form__input" id="twitchid" placeholder="Twitch Name" required="" />
+  <label for="name" class="form__label" id="twitchUserNameLabel">Twitch.tv/</label>
+<br>
+<br>
+<label>Command Delay (ms)</label>
+<input type="number" id="commandDelay">
+<br>
+<br>
+<br>
+<label>Move Left Bit Price</label>
+<input type="number" class="jake_numBox" id="moveLeftBitPrice">
+<input type="checkbox" id="moveLeftBitEnabled" checked>
+<div class="rightGroup">
+<label>Move Right Bit Price</label>
+<input type="number" class="jake_numBox" id="moveRightBitPrice">
+<input type="checkbox" id="moveRightBitEnabled" checked>
+</div>
+<br>
+<br>
+    <label>Move Up Bit Price</label>
+    <input type="number" class="jake_numBox" id="moveUpBitPrice">
+    <input type="checkbox" id="moveUpBitEnabled" checked>
+<div class="rightGroup">
+    <label>Move Down Bit Price</label>
+    <input type="number" class="jake_numBox" id="moveDownBitPrice">
+    <input type="checkbox" id="moveDownBitEnabled" checked>
+</div>
+<br>
+<br>
+<label>Use "Q" Ability Price</label>
+<input type="number" class="jake_numBox" id="useQBitPrice">
+<input type="checkbox" id="useQBitEnabled" checked>
+<div class="rightGroup">
+<label>Use "E" Ability Price</label>
+<input type="number" class="jake_numBox" id="useEBitPrice">
+<input type="checkbox" id="useEBitEnabled" checked>
+</div>
+<br>
+<br>
+<label>Use "C" Ability Price</label>
+<input type="number" class="jake_numBox" id="useCBitPrice">
+<input type="checkbox" id="useCBitEnabled" checked>
+<div class="rightGroup">
+<label>Use "Ultimate" Ability Price</label>
+<input type="number" class="jake_numBox" id="useUltBitPrice">
+<input type="checkbox" id="useUltBitEnabled" checked>
+</div>
+<br>
+<br>
+<label>Jump Price</label>
+<input type="number" class="jake_numBox" id="jumpPrice">
+<input type="checkbox" id="jumpBitEnabled" checked>
+<div class="rightGroup">
+<label>Crouch Price</label>
+<input type="number" class="jake_numBox" id="crouchPrice">
+<input type="checkbox" id="crouchBitEnabled" checked>
+</div>
+<br>
+<br>
+<label>Drop Weapon Price</label>
+<input type="number" class="jake_numBox" id="dropWeaponPrice">
+<input type="checkbox" id="dropWeaponBitEnabled" checked>
+<div class="rightGroup">
+<label>Switch to Random Weapon Price</label>
+<input type="number" class="jake_numBox" id="switchWeaponPrice">
+<input type="checkbox" id="switchWeaponBitEnabled" checked>
+</div>
+<br>
+<br>
+<br>
+<input type="button" id="startCrowdControlButton" class="button-3" value="Start Crowd Control" onclick="crowdController();">
+<p id="cc_status"></p>

@@ -1,0 +1,20 @@
+{
+  "name": "valorantcrowdcontrol",
+  "version": "1.0.0",
+  "description": "nodejs based twitch valorant crowd control",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "JakeZSR Industries",
+  "license": "ISC",
+  "dependencies": {
+    "lts": "^1.2.0",
+    "tmi.js": "^1.8.5",
+    "node-key-sender": "^1.0.11"
+  },
+  "devDependencies": {
+    "electron": "^21.2.0"
+    
+  }
+}
